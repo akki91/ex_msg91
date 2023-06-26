@@ -6,7 +6,7 @@ defmodule ExMsg91.MixProject do
   def project do
     [
       app: :ex_msg91,
-      version: "0.1.0",
+      version: "0.2.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),

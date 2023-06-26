@@ -37,7 +37,7 @@ defmodule ExMsg91 do
   """
 
   def send_sms(template_id, phone_number, country_code, variables \\ %{}) do
-    authkey = from_env(:ex_msg, :auth_key)
+    authkey = from_env(:ex_msg91, :auth_key)
     processed_phone = String.trim(country_code <> phone_number)
     params = build_params(processed_phone, template_id, variables)
     {status_code, processed_response} = perform(:post, sms_url(), params, %{"authkey" => authkey})
