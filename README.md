@@ -8,15 +8,15 @@ the package can be installed by adding `ex_msg91` to your list of dependencies i
 ```elixir
 def deps do
   [
-    {:ex_msg91, "~> 0.1.0"}
+    {:ex_msg91, "~> 0.2.0"}
   ]
 end
 ```
 
 ## Configuration
 ```elixir
-config :ex_msg,
-  authkey: "msg91_api_key",
+config :ex_msg91,
+  auth_key: "msg91_api_key",
 ```
 
 ## Usage
